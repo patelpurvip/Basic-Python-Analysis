@@ -9,3 +9,4 @@ Election Results:
  Li: 14.0% (492940 votes)
  O'Tooley: 3.0% (105630 votes)
  -------------------------------------------------------
+ Winner: Khan

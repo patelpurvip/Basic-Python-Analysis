@@ -94,6 +94,7 @@ with open(output_file, "w", newline="") as output_file:
     output_file.write("\n Li: " + str(Li_percentage) + "% (" + str(Li) + " votes)")
     output_file.write("\n O'Tooley: " + str(OTooley_percentage) + "% (" + str(OTooley) + " votes)")
     output_file.write("\n -------------------------------------------------------")
+    output_file.write("\n Winner: " + str(winner))
     output_file.close()
 
 
