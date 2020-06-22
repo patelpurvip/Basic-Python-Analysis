@@ -8,8 +8,9 @@ def average(numbers):
         total += number
     return total / length
 
+
+# FINANCIAL ANALYSIS (results printed to terminal)
 input_path = os.path.join('.',"budget_data.csv")
-output_file = os.path.join('.', "financial_analysis.txt")
 
 with open(input_path, newline="") as csvfile:
     csvreader=csv.reader(csvfile, delimiter=",")
@@ -44,7 +45,11 @@ with open(input_path, newline="") as csvfile:
     print("Greatest Increase in Profits: " + str(maxmonth) + " ($"+str(max_profit) +")")
     print("Greatest Decrease in Profits: " + str(minmonth) + " ($"+str(min_profit)+")")
 
+
+
 # WRITE RESULTS TO TXT
+output_file = os.path.join('.', "financial_analysis.txt")
+
 with open(output_file, "w", newline="") as output_file:
     output_file.write('.....................................................')
     output_file.write('\n Financial Analysis')
