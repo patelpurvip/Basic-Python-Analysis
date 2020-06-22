@@ -1,4 +1,11 @@
 Election Results:
  -------------------------------------------------------
  Total Votes: 3521001
- -------------------------------------------------------Candidates receiving votes: Khan, Correy, Li, O'TooleyKhan: 63.0% (2218231 votes)Correy: 20.0% (704200 votes)Li: 14.0% (492940 votes)O'Tooley: 3.0% (105630 votes)-------------------------------------------------------
+ -------------------------------------------------------
+ Candidates receiving votes: Khan, Correy, Li, O'Tooley
+
+ Khan: 63.0% (2218231 votes)
+ Correy: 20.0% (704200 votes)
+ Li: 14.0% (492940 votes)
+ O'Tooley: 3.0% (105630 votes)
+ -------------------------------------------------------
