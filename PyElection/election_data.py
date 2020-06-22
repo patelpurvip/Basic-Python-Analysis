@@ -8,9 +8,10 @@ def average(numbers):
         total += number
     return total / length
 
-budget_data_path = os.path.join('.',"election_data.csv")
+input_path = os.path.join('.',"election_data.csv")
+output_path = ('.', "election_results.txt")
 
-with open(budget_data_path, newline="") as csvfile:
+with open(input_path, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
 
     csv_header = next(csvreader)

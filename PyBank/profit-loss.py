@@ -8,9 +8,10 @@ def average(numbers):
         total += number
     return total / length
 
-budget_data_path = os.path.join('.',"budget_data.csv")
+input_path = os.path.join('.',"budget_data.csv")
+output_file = os.path.join('.', "financial_analysis.txt")
 
-with open(budget_data_path, newline="") as csvfile:
+with open(input_path, newline="") as csvfile:
     csvreader=csv.reader(csvfile, delimiter=",")
 
     csv_header=next(csvreader)
@@ -42,3 +43,15 @@ with open(budget_data_path, newline="") as csvfile:
     print("Average Profit/Loss per month: $" + str(ave_profit))
     print("Greatest Increase in Profits: " + str(maxmonth) + " ($"+str(max_profit) +")")
     print("Greatest Decrease in Profits: " + str(minmonth) + " ($"+str(min_profit)+")")
+
+# WRITE RESULTS TO TXT
+with open(output_file, "w", newline="") as output_file:
+    output_file.write('.....................................................')
+    output_file.write('\n Financial Analysis')
+    output_file.write('\n.....................................................')
+    output_file.write('\nTotal Months: ' + str(len(list_of_months)))
+    output_file.write('\nNet Profit/Loss: $' + str(sum(profits)))
+    output_file.write('\nAverage Profit/Loss per month: $' + str(ave_profit))
+    output_file.write('\nGreatest Increase in Profits: ' + str(maxmonth) + ' ($' + str(max_profit) + ')')
+    output_file.write('\nGreatest Decrease in Profits: ' + str(minmonth)+ ' ($' + str(min_profit) + ')')
+    output_file.close()
