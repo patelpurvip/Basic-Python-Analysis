@@ -11,6 +11,8 @@ def average(numbers):
 
 # ELECTION RESULTS ANALYSIS (results printed to terminal)
 input_path = os.path.join('.',"election_data.csv")
+output_file = os.path.join('.', "election_results.txt")
+winner = ""
 
 with open(input_path, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
@@ -67,17 +69,19 @@ with open(input_path, newline="") as csvfile:
 
     if Khan > Correy and Khan > Li and Khan > OTooley:
         print("Winner: Khan")
+        winner = "Khan"
     elif Correy > Khan and Correy > Li and Correy > OTooley:
         print("Winner: Correy")
+        winner = "Correy"
     elif Li > Correy and Li > Khan and Li > OTooley:
         print("Winner: Li")
+        winner = "Li"
     elif OTooley > Correy and OTooley > Li and OTooley > Khan:
         print("Winner: O'Tooley")
+        winner = "O'Tooley"
 
 
 #  WRITE RESULTS TO TXT
-output_path = os.path.join('.', "election_results.txt")
-
 with open(output_file, "w", newline="") as output_file:
     output_file.write("Election Results:")
     output_file.write("\n -------------------------------------------------------")
