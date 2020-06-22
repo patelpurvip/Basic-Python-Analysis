@@ -2,7 +2,8 @@
 
 This repository contains py files that analyze two different csv worksheets:
 
-1) Financial Analysis (PyBank):
+
+## 1) Financial Analysis (PyBank):
 The accompanying csv mirrors a company's financial records, stored in a very basic csv worksheet (the dataset is composed of two columns: `Date` and `Profit/Losses`).
 
 The python script analyzes the worksheet to calculate the following:
@@ -13,7 +14,7 @@ The python script analyzes the worksheet to calculate the following:
   * The greatest decrease in losses (date and amount) over the entire period
 
 
-1) Election Results Analysis (PyElection):
+## 2) Election Results Analysis (PyElection):
 The accompanying csv mirrors polling results from a local election in a small town. The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`. 
 
 The python script analyzes the votes and calculates each of the following:
