@@ -8,8 +8,9 @@ def average(numbers):
         total += number
     return total / length
 
+
+# ELECTION RESULTS ANALYSIS (results printed to terminal)
 input_path = os.path.join('.',"election_data.csv")
-output_path = ('.', "election_results.txt")
 
 with open(input_path, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
@@ -72,3 +73,6 @@ with open(input_path, newline="") as csvfile:
         print("Winner: Li")
     elif OTooley > Correy and OTooley > Li and OTooley > Khan:
         print("Winner: O'Tooley")
+
+#  WRITE RESULTS TO TXT
+output_path = os.path.join('.', "election_results.txt")
