@@ -74,5 +74,25 @@ with open(input_path, newline="") as csvfile:
     elif OTooley > Correy and OTooley > Li and OTooley > Khan:
         print("Winner: O'Tooley")
 
+
 #  WRITE RESULTS TO TXT
 output_path = os.path.join('.', "election_results.txt")
+
+with open(output_file, "w", newline="") as output_file:
+    output_file.write("Election Results:")
+    output_file.write("\n -------------------------------------------------------")
+    output_file.write("\n Total Votes: " + str(vote_count))
+    output_file.write("\n -------------------------------------------------------")
+    output_file.write("Candidates receiving votes: " + list(candidates)[0] + ", " + list(candidates)[1] + ", " + list(candidates)[2] + ", " +list(candidates)[3])
+    output_file.write("Khan: " + str(Khan_percentage) + "% (" + str(Khan) + " votes)")
+    output_file.write("Correy: " + str(Correy_percentage) + "% (" + str(Correy) + " votes)")
+    output_file.write("Li: " + str(Li_percentage) + "% (" + str(Li) + " votes)")
+    output_file.write("O'Tooley: " + str(OTooley_percentage) + "% (" + str(OTooley) + " votes)")
+    output_file.write("-------------------------------------------------------")
+    output_file.close()
+
+
+ 
+
+    
+    
