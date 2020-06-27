@@ -1,5 +1,7 @@
 # Basic Python Analysis of Excel/CSV worksheets
 
+![python-excel-logo.png](python-excel-logo.png)
+
 This repository contains py files that analyze two different csv worksheets:
 
 
