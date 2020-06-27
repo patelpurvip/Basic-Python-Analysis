@@ -4,6 +4,11 @@
 
 This repository contains py files that analyze two different csv worksheets:
 
+## CONTENTS (for each analysis)
+1. raw data (csv file)
+2. python script file
+3. txt file with analysis results (generated when the corresponding py file is run)
+
 
 ## 1) Financial Analysis (PyBank):
 The accompanying csv mirrors a company's financial records, stored in a very basic csv worksheet (the dataset is composed of two columns: `Date` and `Profit/Losses`).
