@@ -31,6 +31,7 @@ The python script analyzes the votes and calculates each of the following:
   * The total number of votes each candidate won
   * The winner of the election based on popular vote.
 
+## 3) Results:
   For both analyses, the final code prints the analysis to the terminal and exports a text file with the results.
   ![Financial Analysis](Images/financial_analysis.png)
 
