@@ -37,5 +37,3 @@ The python script analyzes the votes and calculates each of the following:
 
   ![Election Results](Images/election_results.png)
   
-### Copyright  
-**Exercise designed by © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.**
